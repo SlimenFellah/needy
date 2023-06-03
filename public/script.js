@@ -6,7 +6,7 @@ ScrollReveal().reveal('#fifth');
 ScrollReveal().reveal('#footer');
 
 
-
+//
 
 var downloadSection = document.getElementById("download")
 var bigContainer = document.getElementById("bigContainer")
