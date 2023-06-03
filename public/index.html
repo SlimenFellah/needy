@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking the icons and fonts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./Assets/N.png" />
+    <!-- ScrollReveal script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ duration: 1000 });
+    </script>
+    <!-- Main Script -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js" defer></script>
+
+    <!-- <script>
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => console.log("submitted"));
+    </script>
+    -->
+    <title>Needy</title>
+  </head>
+  <body
+    class="white bg-slate-50 transition-colors duration-300 text-black relative"
+    id="body"
+  >
+    <div id="bigContainer">
+      <!-- Navbar + Main -->
+      <div id="main" class="relative min-h-screen">
+        <img
+          class="z-1 h-full w-1/2 absolute right-0"
+          src="./Assets/shapePhone.png"
+        />
+
+        <!-- Navbar -->
+        <div
+          id="navBar"
+          class="md:flex justify-between items-center relative p-4 z-2"
+        >
+          <h1 class="Pacifico text-center text-2xl md:mx-4">Needy</h1>
+          <div class="hidden md:inline-block">
+            <button
+              class="bg-white border-2 border-black p-4 m-2 rounded-xl hover:bg-slate-100 text-black"
+              onclick="showDownload()"
+              data-lang="download"
+            >
+              Download the app
+            </button>
+            <button
+              class="text-white bg-black p-4 m-2 rounded-xl hover:bg-slate-900"
+              data-lang="knowMore"
+            >
+              Know more
+            </button>
+          </div>
+        </div>
+        <!-- Hero -->
+        <div
+          id="hero"
+          class="h-full relative z-2 text-center md:flex md:items-center md:justify-between p-12"
+        >
+          <div
+            class="md:w-1/2 h-full flex justify-between items-center flex-col"
+          >
+            <h1 class="Pacifico text-8xl md:text-9xl">Needy</h1>
+            <h3 class="md:pl-16 pl-4 font-medium">Helping services</h3>
+            <h1 class="m-8 text-xl md:text-3xl" data-lang="mark">
+              Help people, make people happy.
+            </h1>
+            <a
+              class="p-4 rounded-xl text-xl text-white bg-cyan-600 hover:bg-cyan-800 animate-bounce"
+              href="#second"
+            >
+              <i class="ri-arrow-down-line"></i>
+              <span data-lang="wru">WHO ARE US ?</span>
+              <i class="ri-arrow-down-line"></i>
+            </a>
+          </div>
+          <div id="image" class="my-4 md:w-1/2 flex justify-center">
+            <img class="rotate-6 w-5/12" src="Assets/phone.png" />
+          </div>
+        </div>
+      </div>
+      <!-- Who are us -->
+      <div id="second" class="w-3/4 mx-auto text-center my-4 p-4 min-h-screen">
+        <h1 data-lang="wru" class="text-6xl font-bold my-6">Who are Us ?</h1>
+        <p class="my-6">
+          <span class="font-semibold" data-lang="we">We are </span>
+          <span data-lang="weare"
+            >a group of computer science students at esi sba, who opted for the
+            needy app as a 2cpi project title.<br />
+            Our team members are: Ouerred islem, Fellah slimene, Mokhtari
+            meriem, Oueddan youcef, Zenasni youcef, Chaib fakhreddin.</span
+          >
+        </p>
+        <img class="w-1/3 mx-auto rounded-full" src="./Assets/esi.png" />
+        <p class="my-6" data-lang="whatis">
+          The needy app is an app for helping people find their needs from
+          objects to services that are provied by other users.
+        </p>
+      </div>
+      <!-- The need never stops -->
+      <div id="third" class="min-h-screen relative">
+        <img
+          src="./Assets/shape2Phone.png"
+          class="h-full absolute z-1 -left-44 md:left-0"
+        />
+        <div id="content" class="h-full relative z-2 p-4">
+          <h1 class="text-center text-6xl font-bold" data-lang="title2">
+            The need never stops !
+          </h1>
+          <div class="mt-16 md:flex flex-row items-center justify-around">
+            <div id="hands" class="w-2/3 mx-auto md:w-1/3 flex items-center">
+              <img src="./Assets/hands.png" class="" />
+            </div>
+            <div class="md:w-1/2 my-12 mx-8 text-center">
+              <p class="text-2xl">
+                <span data-lang="parag2">
+                  4.5 million Americans will a need blood transfusion each year,
+                  18 percent of the nation's population are homeless, the
+                  biggest part of the world have limited income. and can't buy
+                  enough tools, or pay services.<br />
+                </span>
+
+                <span class="text-cyan-950 md:text-cyan-600" data-lang="parag21"
+                  >So why not help those people in their needs.</span
+                >
+              </p>
+              <button
+                class="bg-cyan-600 p-4 m-4 text-white rounded hover:bg-cyan-800"
+                onclick="showDownload()"
+                data-lang="btn2"
+              >
+                Start helping now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- With needy -->
+      <div
+        id="fourth"
+        class="min-h-screen p-4 my-4 flex flex-col justify-around"
+      >
+        <h1 class="text-center text-6xl font-bold my-4" data-lang="title3">
+          With needy :
+        </h1>
+        <div
+          id="cards"
+          class="grid grid-cols-1 text-center md:text-left md:grid-cols-4 gap-2"
+        >
+          <div
+            id="card"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+          >
+            <img src="./Assets/map2.png" class="mx-auto md:mx-4 invert w-1/4" />
+            <h1 class="font-semibold m-4" data-lang="card1t">
+              Find the closest
+            </h1>
+            <p class="m-4 mb-16" data-lang="card1p">
+              Due to needy geolocalisation system, you can find the closest
+              helper from you.
+            </p>
+          </div>
+          <div
+            id="card"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+          >
+            <img src="./Assets/safe.png" class="mx-auto md:mx-4 invert w-1/4" />
+            <h1 class="font-semibold m-4" data-lang="card2t">You are safe</h1>
+            <p class="m-4 mb-16" data-lang="card2p">
+              Have enough informations about your contact make your dealing
+              safe, and avoids you scammers.
+            </p>
+          </div>
+          <div
+            id="card"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+          >
+            <img
+              src="./Assets/helpHands.png"
+              class="mx-auto md:mx-4 invert w-1/4"
+            />
+            <h1 class="font-semibold m-4" data-lang="card3t">
+              Multiple categories
+            </h1>
+            <p class="m-4 mb-16" data-lang="card3p">
+              Needy offers multiple categories donations, to make sure you will
+              find your needs.
+            </p>
+          </div>
+          <div
+            id="card"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+          >
+            <img
+              src="./Assets/world.png"
+              class="mx-auto md:mx-4 invert w-1/4"
+            />
+            <h1 class="font-semibold m-4" data-lang="card4t">
+              All over the world
+            </h1>
+            <p class="m-4 mb-16" data-lang="card4p">
+              Wherever you are you can use needy, it is not specified to any
+              country or region.
+            </p>
+          </div>
+        </div>
+        <h1 class="text-xl text-center" data-lang="mm">And much more...</h1>
+      </div>
+      <!-- Feed back -->
+      <div
+        id="fifth"
+        class="relative min-h-screen flex flex-col justify-around"
+      >
+        <img
+          class="z-1 w-1/2 absolute right-0 h-full"
+          src="./Assets/shapePhone.png"
+        />
+        <h1
+          class="text-center text-6xl font-bold relative z-2"
+          data-lang="title4"
+        >
+          Give a feed back :
+        </h1>
+        <div class="md:flex justify-around relative z-2">
+          <div class="my-4 md:w-1/2 md:my-12 mx-8 text-center">
+            <p class="text-xl" data-lang="parag4">
+              Contribute in making needy a better application :<br />
+              By giving a feed back about the idea, or your experience with the
+              application.<br />
+              We love to hear from you.
+            </p>
+            <form
+              id="fb_form"
+              class="my-4 w-3/4 mx-auto"
+              action="/"
+              method="POST"
+            >
+              <div class="md:float-right">
+                <label class="" data-lang="fn">Full name: </label>
+                <input
+                  class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
+                  id="name"
+                  name="name"
+                /><br />
+              </div>
+              <div class="md:float-right">
+                <label class="md:mr-2" data-lang="em">Email: </label>
+                <input
+                  class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
+                  id="email"
+                  name="email"
+                /><br />
+              </div>
+              <div class="md:float-right">
+                <label class="md:mr-2" data-lang="sb">Subject: </label>
+                <input
+                  class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
+                  id="subject"
+                  name="subject"
+                /><br />
+              </div>
+              <div class="md:flex md:float-right">
+                <label class="md:mr-2 md:mt-1" data-lang="msg">Message:</label>
+                <input
+                  class="block mx-auto md:mx-0 md:inline border-solid border-2 md:w-96 h-52 border-cyan-600 rounded m-2"
+                  id="message"
+                  name="message"
+                />
+                <br />
+              </div>
+
+              <button
+                class="w-1/2 mx-auto bg-cyan-600 p-4 m-4 text-white border-1 border-white rounded hover:bg-cyan-800"
+                id="btn"
+                data-lang="sbm"
+                onclick="sendMail()"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div id="thumbs" class="md:w-1/3 flex justify-center items-center">
+            <img src="./Assets/like.png" class="w-1/2 my-6 md:w-full mx-auto" />
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        id="footer"
+        class="h-48 relative border-solid border-2 border-cyan-600"
+      >
+        <img src="./Assets/shape2.png" class="absolute z-1 left-0 h-full" />
+        <div
+          class="relative z-2 text-center h-full p-2 flex flex-col justify-between"
+        >
+          <h1 class="font-semibold text-xl md:text-3xl">
+            NEEDY 2023 © ALL RIGHTS RESERVED
+          </h1>
+          <div class="flex justify-around">
+            <a
+              class="text-sm md:text-xl hover:cursor-pointer"
+              onclick="showDownload()"
+              >Download the app</a
+            >
+            <a
+              class="text-sm md:text-xl hover:cursor-pointer"
+              onclick="switchMode()"
+              >Switch dark/white theme</a
+            >
+            <a class="text-sm md:text-xl hover:cursor-pointer" href="#fifth"
+              >Give a feed back</a
+            >
+          </div>
+          <div class="flex justify-around">
+            <a class="text-sm md:text-xl hover:cursor-pointer">Know more</a>
+            <!-- <a class="text-sm md:text-xl hover:cursor-pointer"
+              >Change language</a
+            > -->
+            <div class="flex flex-row">
+              <p class="text-sm md:text-xl mx-2">Change language :</p>
+              <select
+                id="selector"
+                class="text-sm md:text-lg bg-white text-black border-2 rounded-md border-black"
+                onchange="changeLanguage()"
+              >
+                <option value="en">English</option>
+                <option value="fr">Francais</option>
+                <option value="ar">العربية</option>
+              </select>
+            </div>
+          </div>
+          <h2>
+            Made with
+            <img
+              onclick="getHearts()"
+              src="./Assets/hearth.png"
+              class="w-4 inline hover:cursor-pointer"
+            />
+            by needyTeam
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Downlad -->
+    <div
+      id="download"
+      class="hidden top-0 w-screen h-screen flex items-center justify-center text-black"
+    >
+      <div
+        class="bg-white relative w-2/3 h-2/3 p-4 text-center border-2 border-cyan-600 rounded-md"
+      >
+        <h1 class="text-xl font-semibold" data-lang="tnk">
+          Thank you for choosing needy :
+        </h1>
+        <h2 data-lang="cho">Choose your option</h2>
+        <a
+          class="absolute p-2 md:p-4 right-0 top-0 md:right-4 md:top-4 text-2xl m-2 hover:cursor-pointer"
+          onclick="hideDownload()"
+          >X</a
+        >
+        <div
+          class="md:h-full flex justify-around items-center flex-col md:flex-row"
+        >
+          <!-- 
+          <a
+            class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer"
+            href="http://play.google.com/store/search?q=needy&c=apps"
+            target="_blank"
+          >
+            <div>
+              <img src="./Assets/gp2.png" />
+              <h2>Google play</h2>
+            </div>
+          </a>
+          <a
+            class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer"
+            href="https://www.apple.com/fr/app-store/"
+            target="_blank"
+          >
+            <div>
+              <img src="./Assets/as.png" />
+              <h2>App store</h2>
+            </div>
+          </a>
+        -->
+          <a
+            class="my-2 md:my-0 w-1/2 md:w-1/4 hover:cursor-pointer"
+            href="./Assets/N.png"
+            download
+          >
+            <div>
+              <img src="./Assets/apk.png" />
+              <h2>Apk File</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- EmailJs script -->
+    <!-- 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SH7zpKxtz_Qz-i4Cb");
+      })();
+    </script> -->
+  </body>
+</html>
