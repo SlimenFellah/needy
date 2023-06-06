@@ -73,6 +73,7 @@ function getHearts(){
     
 }
 
+
 // SMTPJs methode
 /* 
 function sendMail(){
